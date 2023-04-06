@@ -8,10 +8,10 @@ function HooksCakesContainer() {
     const dispatch = useDispatch();
 
     return (
-        <>
+        <div>
             <input type='text' value={cakesToBuy} onChange={(element) => setCakesToBuy(element.target.value)} placeholder='How many cakes you want?'></input>
             <button onClick={() => dispatch(buyCakes(cakesToBuy))}>Buy</button>
-        </>
+        </div>
     );
 }
 
